@@ -31,7 +31,7 @@
       <a class="nav-link" href="#javascript">JavaScript</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#htmlcss">HTML and CSS </a>
+      <a class="nav-link" href="#java">Java </a>
     </li>
   </ul>
 <div id="react">
@@ -238,6 +238,44 @@
                             </li>
                     </ul>
 <div>
+
+        <div id="java">
+                <h3> Java Interview Qsns</h3> 
+        </div>
+        <div>
+                <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                                <a class="nav-link" href="#ja1">staticMethodAndVariables</a>
+                        </li>
+                        <li class="nav-item">
+                                <a class="nav-link" href="#ja2">final keyword</a>
+                        </li>
+                        <li class="nav-item">
+                                <a class="nav-link" href="#ja3">Array vs ArrayLlist</a>
+                        </li>
+                        <li class="nav-item">
+                                <a class="nav-link" href="#ja4">Interface</a>
+                        </li>
+                        <li class="nav-item">
+                                <a class="nav-link" href="#ja5">Abstract class vs Interface</a>
+                        </li>
+                        <li class="nav-item">
+                                <a class="nav-link" href="#ja6">Singleton</a>
+                        </li>
+                        <li class="nav-item">
+                                <a class="nav-link" href="#ja7">Test7</a>
+                        </li>
+                        <li class="nav-item">
+                                <a class="nav-link" href="#ja8">Test8</a>
+                        </li>
+                        <li class="nav-item">
+                                <a class="nav-link" href="#ja9"></a>
+                        </li>
+                        <li class="nav-item">
+                                <a class="nav-link" href="#ja10"></a>
+                        </li>
+                </ul>
+        </div>
 <h2 id="r1">Features and Advantages</h2> <span class="text-primary">Jump to:</span><a href ="#index"class="text-danger" >  INDEX</a>
 <a href = "#react" class="text-success">REACT</a>
 <p> <b>Major features of React are listed below:</b>
@@ -850,6 +888,90 @@
     
 </div>
 
+<div id="java">
+        <h2 id="ja1">staticMethodAndVariables</h2><span class="text-primary">Jump to:</span><a href ="#index"class="text-danger" > INDEX</a>
+        <a href = "#java" class="text-success">Java</a>
+        <p>
+                A class has two sections one declares variables, and other declares method, and these are called instance variables and instance methods, respectively. 
+                They are termed so because every time a class is instantiated, a new copy of each of them is created. 
+        <br><i>Variables and methods can be created that are common to all objects and accessed without using a particular object by declaring them static.</i>
+        <br>        Static members are also available to be used by other classes and methods. 
+        </p>
+
+        <h2 id="ja2">final keyword</h2><span class="text-primary">Jump to:</span><a href ="#index"class="text-danger" > INDEX</a>
+        <a href = "#java" class="text-success">Java</a>
+        <p>The final keyword in Java is a non-access modifier that applies only to a class, method, or variable.
+                It serves a different purpose based on the context where it is used.
+        <br><b>With a class</b>
+        <br>When a class is declared as final, then it is disabled from being subclassed i.e., no class can extend the final class.
+
+        <br><b>With a method</b>
+        <br>Any method accompanying the final keyword is restricted from being overridden by the subclass.
+
+        <br><b>With a variable</b>
+        <br>A variable followed by the final keyword is not able to change the value that it holds during the program execution. So, it behaves like a constant.
+        </p>
+
+        <h2 id="ja3">Array vs ArrayLlist</h2><span class="text-primary">Jump to:</span><a href ="#index"class="text-danger" > INDEX</a>
+        <a href = "#java" class="text-success">Java</a>
+        <p>
+                An array necessitates for giving the size during the time of declaration, while an array list doesn't necessarily require size as it changes size dynamically. 
+                To put an object into an array, there is the need to specify the index. However, no such requirement is in place for an array list. 
+                While an array list is parameterized, an array is not parameterized.
+        </p>
+
+        <h2 id="ja4">Interface</h2><span class="text-primary">Jump to:</span><a href ="#index"class="text-danger" > INDEX</a>
+        <a href = "#java" class="text-success">Java</a>
+        <p>A Java interface is a template that has only method declarations and not method implementations. 
+                It is a workaround for achieving multiple inheritances in Java. Some worth remembering important points regarding Java interfaces are:
+                <ul>
+                        <li>A class that implements the interface must provide an implementation for all methods declared in the interface</li>
+                        <li>All methods in an interface are internally public abstract void</li>
+                        <li>All variables in an interface are internally public static final</li>
+                        <li>Classes do not extend but implement interfaces</li>
+                </ul>
+
+        </p>
+
+        <h2 id="ja5">Abstract class vs Interface</h2><span class="text-primary">Jump to:</span><a href ="#index"class="text-danger" > INDEX</a>
+        <a href = "#java" class="text-success">Java</a>
+        <p> 
+                <ul>
+                        <li><b>Constituents - </b>An abstract class contains instance variables, whereas an interface can contain only constants.</li>
+                        <li><b>Constructor and Instantiation - </b>While an interface has neither a constructor nor it can be instantiated, an abstract class can have a default constructor that is called whenever the concrete subclass is instantiated.</li>
+                        <li><b>Implementation of Methods - </b>All classes that implement the interface need to provide an implementation for all the methods contained by it. A class that extends the abstract class, however, doesn't require implementing all the methods contained in it. 
+                                Only abstract methods need to be implemented in the concrete subclass.</li>  
+                        <li><b>Type of Methods - </b>Any abstract class has both abstract as well as non-abstract methods. Interface, on the other hand, has only a single abstract method.</li>
+                </ul>
+        </p>
+
+        
+        <h2 id="ja6">Singleton</h2><span class="text-primary">Jump to:</span><a href ="#index"class="text-danger" > INDEX</a>
+        <a href = "#java" class="text-success">Java</a>
+        <p> A Singleton class allows only one instance of the class to be created. A class can be made singleton with the following steps:
+                <ol>
+                        <li> Creating a static instance of the class with the class.</li>
+                        <li> By not allowing the user to create an instance with default constructor by defining private constructor.</li>
+                        <li> Create a static method to return the object of an instance of A. </li>
+                </ol>
+        </p>
+
+        <h2 id="ja7">Test7</h2><span class="text-primary">Jump to:</span><a href ="#index"class="text-danger" > INDEX</a>
+        <a href = "#java" class="text-success">Java</a>
+        <p> 
+
+        </p>
+
+        <h2 id="ja8">Test8</h2><span class="text-primary">Jump to:</span><a href ="#index"class="text-danger" > INDEX</a>
+        <a href = "#java" class="text-success">Java</a>
+        <p> 
+
+        </p>
+
+
+        
+
+</div>
 
 
 
